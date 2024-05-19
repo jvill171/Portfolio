@@ -555,7 +555,7 @@ button:focus {
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  outline: 1.7px solid rgba(200, 137, 230, 0.637) !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
@@ -571,10 +571,15 @@ button:focus {
   }
 }
 
+.tech-icons *{
+  transition: color 0.15s ease !important;
+}
+
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  outline: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8) !important;
 }
 .tech-icon-images {
   padding: 20px !important;
@@ -591,6 +596,10 @@ button:focus {
   list-style: none !important;
   text-align: left !important;
   padding-left: 1px !important;
+  margin-bottom: 8px !important;
+}
+.about-activity .bullet {
+  padding-right: 8px !important;
 }
 
 @media (max-width: 767px) {
