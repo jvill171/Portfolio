@@ -1,40 +1,58 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+import { ImPointRight, ImBooks } from "react-icons/im";
 
 function AboutCard() {
   return (
     <Card className="quote-card-view">
       <Card.Body>
-        <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
+        <blockquote className="blockquote mb-0"  style={{ textAlign: "left" }}>
+            <p>
+              Hello everyone, I am <span className="purple">Juan Villarreal </span>
+              from <span className="purple"> Texas.</span>
+            </p>
             <br />
-            I am currently employed as a software developer at Juspay.
+            <p>
+              I am currently employed as an IT Support Specialist at Edinburg CISD.
+            </p>
             <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+              
+            <p>
+              I have completed:
+            </p>
+            <ul>
+              <li  className="about-activity" >
+                <span class="bullet"><ImBooks /></span> An Associates in Computer Science
+              </li>
+              <li  className="about-activity" >
+                <span class="bullet"><ImBooks /></span> An Bachelors in Computer & Information Technologies
+              </li>
+              <li  className="about-activity" >
+                <span class="bullet"><ImBooks /></span> An intensive Software Engineering course with Springboard
+              </li>
+            </ul>
             <br />
-            <br />
-            Apart from coding, some other activities that I love to do!
-          </p>
+            <p>
+              Apart from coding, some other activities that I love to do!
+            </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+            <span class="bullet"><ImPointRight /></span> Taking care of my wonderful cat 🐈 Toast
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+            <span class="bullet"><ImPointRight /></span> Playing Games & Watching Shows
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+            <span class="bullet"><ImPointRight /></span> Drawing
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
-          </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <div style={{ textAlign: "right" }}>
+            <p style={{ color: "rgb(155 126 172)" }} >
+              "Identify, Innovate, and Resolve."{" "}
+            </p>
+            <footer className="blockquote-footer" >Juan</footer>
+          </div>
         </blockquote>
       </Card.Body>
     </Card>

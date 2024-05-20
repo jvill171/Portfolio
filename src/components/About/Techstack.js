@@ -1,41 +1,82 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import TechIcon from "./TechIcon"
 import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
   DiReact,
   DiNodejs,
-  DiMongodb,
   DiPython,
   DiGit,
-  DiJava,
+  // DiMongodb,
+  // DiJava,
 } from "react-icons/di";
 import {
-  SiRedis,
   SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
+  SiVuedotjs,
+  SiFlask,
+  // SiRedis,
+  // SiNextdotjs,
+  // SiSolidity,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+import { BiLogoPostgresql } from "react-icons/bi";
+// import { TbBrandGolang } from "react-icons/tb";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+      
+      
+      <TechIcon icon={DiJavascript1}
+        text="JavaScript"
+        hoverColor="F7DF1E"
+      />
+
+      <TechIcon icon={DiPython}
+        text="Python"
+        hoverColor="FFD43B"
+      />
+      <TechIcon icon={CgCPlusPlus}
+        text="C++"
+        hoverColor="5E97D0"
+      />
+      <TechIcon icon={SiFlask}
+        text="Flask"
+        hoverColor="000000"
+      />
+      <TechIcon icon={DiNodejs}
+        text="NodeJS"
+        hoverColor="7DBD00"
+      />
+      <TechIcon icon={SiVuedotjs}
+        text="VueJS"
+        hoverColor="009E60"
+      />
+      <TechIcon icon={DiReact}
+        text="ReactJS"
+        hoverColor="05D5FA"
+      />
+      <TechIcon icon={DiGit}
+        text="Git"
+        hoverColor="F25A3A"
+      />
+      <TechIcon icon={SiFirebase}
+        text="Firebase"
+        hoverColor="FFA611"
+      />
+      <TechIcon icon={BiLogoPostgresql}
+        text="PostgreSQL"
+        hoverColor="33658D"
+      />
+      
+      {/* <Col xs={4} md={2} className="tech-icons">
+        <SiRedis />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <TbBrandGolang />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+        <SiNextdotjs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiSolidity />
@@ -44,26 +85,9 @@ function Techstack() {
         <DiMongodb />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <DiJava />
-      </Col>
+      </Col> */}
+
     </Row>
   );
 }

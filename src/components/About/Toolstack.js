@@ -1,31 +1,44 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
+import TechIcon from "./TechIcon"
 import {
   SiVisualstudiocode,
-  SiPostman,
+  SiInsomnia, 
   SiSlack,
-  SiVercel,
-  SiMacos,
+  SiWindows10,
+  SiUbuntu,
+  SiVercel
 } from "react-icons/si";
 
 function Toolstack() {
+
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
-      </Col>
+
+      <TechIcon icon={SiWindows10}
+        text="Windows"
+        hoverColor="00A1F1"
+      />
+      <TechIcon icon={SiUbuntu}
+        text="WSL Ubuntu"
+        hoverColor="E95420"
+      />
+      <TechIcon icon={SiVisualstudiocode}
+        text="VS Code"
+        hoverColor="0078D7"
+      />
+      <TechIcon icon={SiInsomnia}
+        text="Insomnia"
+        hoverColor="6649E1"
+      />
+      <TechIcon icon={SiSlack}
+        text="Slack"
+        hoverColor="56154F"
+      />
+      <TechIcon icon={SiVercel}
+        text="Vercel"
+        hoverColor="000000"
+      />
     </Row>
   );
 }
