@@ -1,5 +1,3 @@
-WIP
-
 <!--
  <h2 align="center">
   Portfolio Website - v2.0<br/>
@@ -11,6 +9,8 @@ WIP
 
 <br/>
 -->
+Portfolio website
+
 ## Built With
 This project was built using these technologies.
 
