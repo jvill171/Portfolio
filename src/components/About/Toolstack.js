@@ -35,10 +35,10 @@ function Toolstack() {
         text="Slack"
         hoverColor="56154F"
       />
-      <TechIcon icon={SiVercel}
+      {/* <TechIcon icon={SiVercel}
         text="Vercel"
         hoverColor="000000"
-      />
+      /> */}
     </Row>
   );
 }
