@@ -8,11 +8,11 @@ import magidekt from "../../Assets/Projects/magidekt.png";
 import jobly from "../../Assets/Projects/jobly.png";
 import warbler from "../../Assets/Projects/warbler.png";
 import giCalc from "../../Assets/Projects/gi-calculator.png";
+import gimimui from "../../Assets/Projects/gimi-mui.png";
 
 
 function Projects() {
 
-  
   return (
     <Container fluid className="project-section">
       <Particle />
@@ -75,6 +75,17 @@ function Projects() {
               description="A pokemon guessing game similar to Squirdle, a parody of Wordle. Has optional authentication for access to a leaderboard, a time-attack mode, and some simple profile customization."
               ghLink="https://github.com/jvill171/Pkmn-Gssr"
               demoLink="https://pkmn-gssr.onrender.com/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={gimimui}
+              isBlog={false}
+              title="GIMI-MUI"
+              description="A simple desktop application implementing a GUI for the existing GI-Model-Importer (GIMI) tool. Built with PyQt5, this project aims to lower the bar of entry for using GIMI. Additionally, it features a toggleable dark mode."
+              ghLink="https://github.com/jvill171/GIMI-MUI"
+              bananaLink="https://gamebanana.com/tools/17278"
             />
           </Col>
 
