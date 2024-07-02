@@ -7,7 +7,7 @@ import {
   SiSlack,
   SiWindows10,
   SiUbuntu,
-  SiVercel
+  // SiVercel
 } from "react-icons/si";
 
 function Toolstack() {
