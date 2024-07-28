@@ -32,14 +32,16 @@ function ResumeNew() {
         </Row>
 
         <Row className="resume">
+          <Document file={pdf} >
             {Array.from(new Array(2), (_, index) => (
               <>
                 {index > 0 ? <p></p> : ""}
-                <Document file={pdf} className="d-flex justify-content-center">
+                <div className="d-flex justify-content-center">
                   <Page key={`page_${index + 1}`} pageNumber={index + 1} scale={width > 786 ? 1.7 : 0.6} />
-                </Document>
+                </div>
               </>
             ))}
+            </Document>
         </Row>
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
